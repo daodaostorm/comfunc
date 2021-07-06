@@ -17,13 +17,13 @@ public class SignUtils {
 	
     //解密密钥
     //测试密钥key
-    public static final String key = "net02d2geftdt4tj";
+    public static final String key = "";
     //正式密钥key
-    public static final String rekey = "nvvmjk1hi8qlvoy4";
+    public static final String rekey = "";
     //测试向量iv
-    public static final String initVector = "4kz8rn8a7yxdy9u8";
+    public static final String initVector = "";
     //正式向量iv
-    public static final String reinitVector = "fstvas2suhosmvjl";
+    public static final String reinitVector = "";
 
     public static final String orgCode = "test_org2";
     
