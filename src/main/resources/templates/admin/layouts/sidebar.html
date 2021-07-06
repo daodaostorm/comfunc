@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>sidebar</title>
+</head>
+<body>
+	<div id="sidebar" class="sidebar-fixed" th:fragment="sidebar">
+		<div id="sidebar-content">
+
+			<!-- Search Input -->
+			<form class="sidebar-search">
+				<div class="input-box">
+					<button type="submit" class="submit">
+						<i class="icon-search"></i>
+					</button>
+					<span> <input type="text" placeholder="搜索..." />
+					</span>
+				</div>
+			</form>
+
+			<!--=== Navigation ===-->
+			<ul id="nav">
+				<div class="sidebar-title">
+					<span>后台管理</span>
+				</div>
+				<li th:class="${dashboard} ? 'current' : ''"><a href="/">
+						<i class="icon-dashboard"></i> 主页
+				</a></li>
+				<li th:class="${clientuser} ? 'current' : ''"><a href="/admin/serverinfo"> <i
+						class="icon-user"></i> 服务器管理
+				</a></li>
+
+			</ul>
+
+		</div>
+		<div id="divider" class="resizeable"></div>
+	</div>
+	<!-- /Sidebar -->
+</body>
+</html>
